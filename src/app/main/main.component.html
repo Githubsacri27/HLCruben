@@ -1,0 +1,27 @@
+<!-- main.component.html -->
+<div>
+    <h2>Sección Principal</h2>
+    <form #formulario="ngForm" (ngSubmit)="enviarFormulario(formulario.value)">
+      <label for="cancion">Canción:</label>
+      <input type="text" id="cancion" name="cancion" ngModel required>
+  
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" name="autor" ngModel required>
+  
+      <label for="formato">Formato de archivo:</label>
+      <select id="formato" name="formato" ngModel required>
+        <option value="mp3">MP3</option>
+        <option value="wav">WAV</option>
+        <option value="ogg">OGG</option>
+        <!-- Agrega más formatos según sea necesario -->
+      </select>
+  
+      <button type="submit">Enviar</button>
+    </form>
+  
+    <div>
+      <h3>Canciones registradas</h3>
+      <div *ngFor="let cancion of cancionesRegistradas">{{ cancion }}</div>
+    </div>
+  </div>
+  
