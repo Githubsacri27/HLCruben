@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { MainComponent } from './main/main.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabeceraComponent,
     MainComponent,
+    FooterComponent,
     
   ],
   imports: [

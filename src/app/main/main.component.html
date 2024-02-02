@@ -13,10 +13,9 @@
         <option value="mp3">MP3</option>
         <option value="wav">WAV</option>
         <option value="ogg">OGG</option>
-        <!-- Agrega más formatos según sea necesario -->
       </select>
   
-      <button type="submit">Enviar</button>
+      <button type="submit" [disabled]="formulario.invalid">Enviar</button>
     </form>
   
     <div>
