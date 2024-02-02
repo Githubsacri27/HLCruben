@@ -1,0 +1,94 @@
+.formsection {
+  margin: auto;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+}
+input {
+  width: 60%;
+  height: 20px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+label {
+  color: #fff;
+  font-size: 1.2em;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+select,button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.1em;
+  justify-content: center;
+  display: flex;
+  margin: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  letter-spacing: 0.25em;
+  word-spacing: 0.25em;
+}
+.songrec {
+  position: absolute;
+  left: 160px; 
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+}
+.songrec h3 {
+  color: #24243e;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  letter-spacing: 0.25em;
+  word-spacing: 0.25em;
+}
+
+.songrec div {
+  color: #333;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+section.formsection{
+margin-top: 50px;
+
+}
+@media screen and (max-width: 850px) {
+  .formsection {
+    width: 90%; 
+  }
+  input, select, button {
+    width: 80%; 
+  }
+  .songrec {
+    width: 50%;
+    position: relative;
+    left: 0; 
+    top: 0; 
+    margin-top: 70px; 
+    margin-bottom: 20px;
+  }
+}
